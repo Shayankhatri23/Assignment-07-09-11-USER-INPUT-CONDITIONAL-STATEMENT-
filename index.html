@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ var city = prompt("Enter City").toLowerCase();
+    if (city == "karachi") {
+      document.write("Welcome to city of Lights")
+    }
+    else if (city == "islamabad") {
+      document.write("Welcome to Captail City of Pakistan")
+    }
+    else {
+      document.write("Welcome to city of " + city)
+    }
+    document.write("<hr>")
+    var gender = prompt("Enter your Gender").toLowerCase();
+    if (gender == "male") {
+      document.write("Good Morning Sir")
+    }
+    else if (gender == "female") {
+      document.write("Good Morning Ma'am")
+    }
+    else {
+      document.write("Cannot Recongnize the gender")
+    }
+    document.write("<hr>")
+    var color = prompt("Enter Traffic Color").toLowerCase();
+    if (color == "red") {
+      document.write("You must stop")
+    }
+    else if (color == "yellow") {
+      document.write("Ready to go")
+    }
+    else if (color == "green") {
+      document.write("Move Now")
+    }
+    else {
+      document.write("You can only input 'red', 'yellow' & 'green'")
+    }
+    document.write("<hr>")
+    var feul = prompt("Enter feul in your car")
+    if (feul <= 2.5) {
+      document.write("Please refeul your car")
+    }
+    else {
+      document.write("You can move")
+    }
+    document.write("<hr>")
+    var std_name = prompt("Enter Your Name");
+    var roll = prompt("Enter Your Roll Number");
+    var maths = + prompt("Enter Your Maths marks out of 100");
+    var sst = + prompt("Enter Your Social Studies Marks out of 100");
+    var sci = + prompt("Enter Your Science Marks out of 100");
+    var eng = + prompt("Enter Your English Marks out of 100");
+    var t_m = maths + sst + sci + eng;
+    document.write("<h1>" + "Student Name = " + std_name + "</h1>" + "<br>" + "Total Marks of " + std_name + " = " + t_m + "<br>" + "Percentage of " + std_name + " = " + t_m / 400 * 100 + "%");
+    var percentage = + t_m / 400 * 100;
+    if (percentage >= 100) {
+      document.write("<br>" + "Grade of " + std_name + " =" + "A")
+      document.write("<br>" + "Remarks = " + "Excellent")
+    }
+    else if (percentage >= 90) {
+      document.write("<br>" + "Grade of " + std_name + " =" + "B")
+      document.write("<br>" + "Remarks = " + "Good")
+    }
+    else if (percentage >= 80) {
+      document.write("<br>" + "Grade of " + std_name + " =" + "C")
+      document.write("<br>" + "Remarks = " + "You need to Improve")
+    }
+    else if (percentage >= 70) {
+      document.write("<br>" + "Grade of " + std_name + " =" + "D")
+      document.write("<br>" + "Remarks = " + "Sorry")
+    }
+    else {
+      document.write("<br>" + "Grade of " + std_name + " =" + "Fail")
+      document.write("<br>" + "Remarks = " + "Get out of the house")
+    }
+    document.write("<hr>")
+    var secNum = 10
+    var guess =+ prompt("Enter guessed Number")
+    if(guess == secNum){
+      document.write("Bingo! Correct answer")
+    }
+    else if(secNum+1 == guess){
+      document.write("Close enough to right answer")
+    }
+    else{
+      document.write("Wrong Answer")
+    }
+    document.write("<hr>")
+    var user = prompt("Enter number to check divisibility by 3")
+    if(user%3 == 0){
+      document.write(user + " is divisible by 3")
+    }
+    else{
+      document.write(user + " is not divisible by 3")
+    }
+    document.write("<hr>")
+    var t = prompt ("Enter Today temperature")
+    if (t>"40"){
+        document.write("It is too hot outside")
+    }
+    else if (t>"30"){
+        document.write("The Weather today is Normal.")
+    }
+    else if (t>"20"){
+        document.write("Today’s Weather is cool.")
+    }
+    else if (t>"10"){
+        document.write("OMG! Today’s weather is so Cool.")
+    }
+    document.write("<hr>")
+   </script> 
+</body>
+</html>
